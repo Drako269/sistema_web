@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid mt-4">
+    <h1 class="text-center mb-4">Panel de Control - SafeWeb</h1>
+
+    <!-- Acciones Rápidas -->
+    <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+        <div class="col">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Filtrado de Contenido</h5>
+                    <p class="card-text">Administra sitios web bloqueados.</p>
+                    <a href="#" class="btn btn-primary">Configurar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Límites de Actividad</h5>
+                    <p class="card-text">Establece límites de tiempo y consumo.</p>
+                    <a href="#" class="btn btn-primary">Configurar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Reportes de Actividades</h5>
+                    <p class="card-text">Consulta el historial de uso.</p>
+                    <a href="#" class="btn btn-primary">Ver Reporte</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lista de Sitios Web -->
+    <h2 class="mb-4">Sitios Web Monitoreados</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Sitio</th>
+                <th scope="col">Nivel de Peligro</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>facebook.com</td>
+                <td>BAJO</td>
+                <td>Bloqueado</td>
+                <td>
+                    <button class="btn btn-danger">Desbloquear</button>
+                </td>
+            </tr>
+            <tr>
+                <td>tiktok.com</td>
+                <td>MEDIO</td>
+                <td>Bloqueado</td>
+                <td>
+                    <button class="btn btn-danger">Desbloquear</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock %}
